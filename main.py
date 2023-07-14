@@ -6,7 +6,8 @@ letters = string.ascii_letters
 digits = string.digits
 special_chars = string.punctuation[:random.randint(len(string.punctuation) // 3, 50)]
 
-pwd_len = 16
+pwd_len = input('Enter passwrod lenght: ')
+pwd_len = int(pwd_len) if pwd_len != '' else 6
 alphabet = letters + digits + special_chars
 
 pwd = ''
