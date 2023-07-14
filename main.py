@@ -6,7 +6,7 @@ letters = string.ascii_letters
 digits = string.digits
 special_chars = string.punctuation
 
-pwd_len = 6
+pwd_len = int(input('Enter passwrod lenght: '))
 alphabet = letters + digits + special_chars
 
 pwd = ''
