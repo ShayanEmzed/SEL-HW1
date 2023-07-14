@@ -21,6 +21,6 @@ while not pwd_strong:
 
 print(f'Number of letters: {sum(c in letters for c in pwd)}')
 print(f'Number of digits: {sum(c in digits for c in pwd)}')
-print(f'Number of letters: {sum(c in special_chars for c in pwd)}')
+print(f'Number of special characters: {sum(c in special_chars for c in pwd)}')
 print()
 print(f'Password: {pwd}')
