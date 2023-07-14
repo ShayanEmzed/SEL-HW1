@@ -4,7 +4,7 @@ import random
 
 letters = string.ascii_letters
 digits = string.digits
-special_chars = string.punctuation
+special_chars = string.punctuation[:len(string.punctuation) // 3]
 
 pwd_len = 6
 alphabet = letters + digits + special_chars
