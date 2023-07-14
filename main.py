@@ -16,7 +16,7 @@ while not pwd_strong:
     for _ in range(pwd_len):
         pwd += random.choice(alphabet)
     
-    if any(c in special_chars for c in pwd):
+    if any(c in special_chars for c in pwd) and sum(c in digits for c in pwd) >= 2:
         pwd_strong = True
 
 print(pwd)
