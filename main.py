@@ -3,11 +3,13 @@ import random
 
 
 letters = string.ascii_letters
+digits = string.digits
+special_chars = string.punctuation
+
 pwd_len = 6
+alphabet = letters + digits + special_chars
 
-alphabet = letters
 pwd = ''
-
 for _ in range(pwd_len):
     pwd += random.choice(alphabet)
 
